@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherry Snake 🍒</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>🍒 Cherry Snake</h1>
+
+    <div class="scores">
+      <span>Score: <b id="score">0</b></span>
+      <span>Best: <b id="highscore">0</b></span>
+    </div>
+
+    <div class="game-wrapper">
+      <canvas id="game" width="500" height="500"></canvas>
+
+      <div id="overlay" class="overlay">
+        <h2 id="overlay-title">Cherry Snake 🍒</h2>
+        <p id="overlay-text">Collect the cherries!</p>
+        <button id="start-button">Start Game</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button data-direction="up">▲</button>
+      <div class="middle-controls">
+        <button data-direction="left">◀</button>
+        <button data-direction="down">▼</button>
+        <button data-direction="right">▶</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
